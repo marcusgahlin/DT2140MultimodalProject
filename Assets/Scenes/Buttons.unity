@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -392,7 +392,7 @@ GameObject:
   - component: {fileID: 94974648}
   - component: {fileID: 94974647}
   m_Layer: 5
-  m_Name: PausePlayButton
+  m_Name: PausePlayButton_old
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2895,7 +2895,7 @@ GameObject:
   - component: {fileID: 1110383149}
   - component: {fileID: 1110383148}
   m_Layer: 5
-  m_Name: RepeatButton
+  m_Name: RepeatButton_old
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3017,7 +3017,7 @@ GameObject:
   - component: {fileID: 1123545806}
   - component: {fileID: 1123545805}
   m_Layer: 5
-  m_Name: PlayButton
+  m_Name: PausePlayButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3607,7 +3607,7 @@ GameObject:
   - component: {fileID: 1352455129}
   - component: {fileID: 1352455128}
   m_Layer: 5
-  m_Name: PauseButton
+  m_Name: PausePlayButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4114,7 +4114,7 @@ GameObject:
   - component: {fileID: 1924461995}
   - component: {fileID: 1924461994}
   m_Layer: 5
-  m_Name: RewindButton
+  m_Name: RepeatButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
