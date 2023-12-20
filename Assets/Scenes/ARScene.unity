@@ -513,7 +513,7 @@ GameObject:
   - component: {fileID: 94974648}
   - component: {fileID: 94974647}
   m_Layer: 5
-  m_Name: PausePlayButton
+  m_Name: PausePlayButton_old
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2517,7 +2517,7 @@ GameObject:
   - component: {fileID: 1110383149}
   - component: {fileID: 1110383148}
   m_Layer: 5
-  m_Name: RepeatButton
+  m_Name: RepeatButton_old
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2639,7 +2639,7 @@ GameObject:
   - component: {fileID: 1123545806}
   - component: {fileID: 1123545805}
   m_Layer: 5
-  m_Name: PlayButton
+  m_Name: PausePlayButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2708,7 +2708,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1123545806}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1123545806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3222,7 +3234,7 @@ GameObject:
   - component: {fileID: 1924461995}
   - component: {fileID: 1924461994}
   m_Layer: 5
-  m_Name: RewindButton
+  m_Name: RepeatButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3412,7 +3424,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1929554342}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1852027427}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1929554342
 MonoBehaviour:
   m_ObjectHideFlags: 0
