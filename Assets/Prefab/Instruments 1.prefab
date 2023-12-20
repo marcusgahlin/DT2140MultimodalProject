@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 727449416957057166}
   - component: {fileID: 2571768598074162754}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: CubeBass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -168,7 +168,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 712088360364789661}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.3, z: 0}
+  m_LocalPosition: {x: 0, y: 1.3, z: -4.18}
   m_LocalScale: {x: 1, y: 2.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3681,8 +3681,9 @@ GameObject:
   - component: {fileID: 6073875058950896679}
   - component: {fileID: 6812409586770438382}
   - component: {fileID: 595832886382731888}
+  - component: {fileID: 4572328650632897456}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: CubeMicrophone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3696,7 +3697,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3868025766011984827}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.3, z: -0.1}
+  m_LocalPosition: {x: 0, y: 1.3, z: 0.16}
   m_LocalScale: {x: 1, y: 2.6, z: 1.6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4213,6 +4214,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 8176454869485680272}
+--- !u!114 &4572328650632897456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3868025766011984827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f08579c91ea44a84929331d32fb9d01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleMultiplier: 1
 --- !u!1 &4098376198085788260
 GameObject:
   m_ObjectHideFlags: 0
@@ -4231,9 +4245,9 @@ GameObject:
   - component: {fileID: 5732621697766694090}
   - component: {fileID: 1796522888828280112}
   - component: {fileID: 7007620668374861898}
-  - component: {fileID: 20654218702593342}
+  - component: {fileID: 2846399797113134644}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: CubePiano
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4247,7 +4261,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4098376198085788260}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0.79, y: 1, z: 0}
   m_LocalScale: {x: 3, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4764,19 +4778,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 5732621697766694090}
---- !u!114 &20654218702593342
+--- !u!114 &2846399797113134644
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4098376198085788260}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa6e0c7eed7a55c4792704c00b10d803, type: 3}
+  m_Script: {fileID: 11500000, guid: 6f08579c91ea44a84929331d32fb9d01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: {fileID: 0}
+  scaleMultiplier: 1
 --- !u!1 &4478988210661893063
 GameObject:
   m_ObjectHideFlags: 0
@@ -5351,7 +5365,7 @@ GameObject:
   - component: {fileID: 1073484702083959764}
   - component: {fileID: 3344305097044927746}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: CubeGuitar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5928,8 +5942,9 @@ GameObject:
   - component: {fileID: 625669953592381007}
   - component: {fileID: 6467695337554000766}
   - component: {fileID: 5490003334534046669}
+  - component: {fileID: 174242301300977459}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: CubeDrum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5943,7 +5958,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5984278673510475913}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: -1.92, y: 1, z: 0}
   m_LocalScale: {x: 3, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6370,6 +6385,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 7672335583470458449}
+--- !u!114 &174242301300977459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5984278673510475913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f08579c91ea44a84929331d32fb9d01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleMultiplier: 1
 --- !u!1 &6047622500642561081
 GameObject:
   m_ObjectHideFlags: 0
@@ -8814,15 +8842,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28611c0aa466e495b907fc8bd2cc25f6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.137
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28611c0aa466e495b907fc8bd2cc25f6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.004999995
+      value: 0.19
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28611c0aa466e495b907fc8bd2cc25f6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28611c0aa466e495b907fc8bd2cc25f6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9365,19 +9393,6 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ef2331e9abe84b2cb70c3aee8a0e451, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  music: {fileID: 8180241831913795408}
---- !u!114 &7252881788890780665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7616777613370900748}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0558a5d39683640729e84c07e47c3b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 8180241831913795408}
