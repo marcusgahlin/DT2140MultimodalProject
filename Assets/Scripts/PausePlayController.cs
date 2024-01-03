@@ -12,8 +12,11 @@ public class PausePlayController : MonoBehaviour
     {
         music = GetComponent<AudioSource>();
 
-        Button pausePlayButton = GameObject.Find("PausePlayButton").GetComponent<Button>();
-        pausePlayButton.onClick.AddListener(Pause);
+        Button pausePlayButton1 = GameObject.Find("PausePlayButton1").GetComponent<Button>();
+        pausePlayButton1.onClick.AddListener(Pause);
+
+        Button pausePlayButton2 = GameObject.Find("PausePlayButton2").GetComponent<Button>();
+        pausePlayButton2.onClick.AddListener(Pause);
 
         soundController = GetComponent<SoundController>();
         if (soundController == null)
@@ -38,7 +41,6 @@ public class PausePlayController : MonoBehaviour
         isPaused = !isPaused;
     }
 }
-
 
 
 
