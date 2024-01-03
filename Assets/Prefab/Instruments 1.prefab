@@ -4246,6 +4246,7 @@ GameObject:
   - component: {fileID: 1796522888828280112}
   - component: {fileID: 7007620668374861898}
   - component: {fileID: 2846399797113134644}
+  - component: {fileID: 3923286750912194702}
   m_Layer: 0
   m_Name: CubePiano
   m_TagString: Untagged
@@ -4791,6 +4792,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleMultiplier: 1
+--- !u!114 &3923286750912194702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4098376198085788260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d2546c6f6cee4d98886b39e5d803ede, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InstrumentMuteButton: {fileID: 0}
+  InstrumentUnmuteButton: {fileID: 0}
 --- !u!1 &4478988210661893063
 GameObject:
   m_ObjectHideFlags: 0
