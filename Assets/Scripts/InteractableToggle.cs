@@ -39,10 +39,17 @@ using UnityEngine.XR.Interaction.Toolkit.AR;
 public class InteractableToggle : MonoBehaviour
 {
     private ARPlacementInteractable placementInteractable;
+    private GameObject instantiatedInstruments;
+    [SerializeField] 
+    private GameObject InstrumentUI;
 
     // Start is called before the first frame update
     void Start()
     {
+        // Hide the instrument UI
+        InstrumentUI.SetActive(false);
+
+        // Add a ObjectPlaced listener
         placementInteractable = GetComponent<ARPlacementInteractable>();
         if (placementInteractable != null)
         {
@@ -61,6 +68,9 @@ public class InteractableToggle : MonoBehaviour
         // You can disable the placementInteractable here if you don't want further placements
         placementInteractable.enabled = false;
 
+        // instantiatedInstruments = GameObject.find('Instruments 1 macke');
+        InstrumentUI.SetActive(true);
+
         // Or if you want to change the prefab for the next placement, you can do so here
         // placementInteractable.placementPrefab = [Your Next Prefab];
     }
@@ -70,4 +80,5 @@ public class InteractableToggle : MonoBehaviour
     {
         // Update logic (if necessary)
     }
+
 }
