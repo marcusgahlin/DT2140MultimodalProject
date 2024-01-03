@@ -28,16 +28,16 @@ public class SoundController : MonoBehaviour
             transform.localScale = originalScale;
         }
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        // if (Input.GetMouseButtonDown(0))
+        // {
+        //     RaycastHit hit;
+        //     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out hit) && hit.collider.gameObject == gameObject)
-            {
-                Mute();
-            }
-        }
+        //     if (Physics.Raycast(ray, out hit) && hit.collider.gameObject == gameObject)
+        //     {
+        //         Mute();
+        //     }
+        // }
     }
 
     public void Mute()
