@@ -7105,7 +7105,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6486115618549710387}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6911b1262a0b4c619192e4790dafe86, type: 3}
   m_Name: 
@@ -7113,6 +7113,7 @@ MonoBehaviour:
   detectionThreshold: 0.5
   vibrationIntensityMultiplier: 2
   audioSource: {fileID: 111215701887438408}
+  cutoffFrequency: 200
 --- !u!114 &8937438483529830602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8113,6 +8114,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 8439746535414459181}
+--- !u!114 &2638583086133748689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8166162827850280799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6911b1262a0b4c619192e4790dafe86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionThreshold: 0.01
+  vibrationIntensityMultiplier: 10
+  audioSource: {fileID: 8439746535414459181}
+  cutoffFrequency: 200
 --- !u!114 &8816211656977569827
 MonoBehaviour:
   m_ObjectHideFlags: 0

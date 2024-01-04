@@ -9,7 +9,14 @@ public class SoundHapticFeedback : MonoBehaviour
     public float detectionThreshold = 0.5f;
     public float vibrationIntensityMultiplier = 2f;
 
+    private AudioLowPassFilter lowPassFilter;
+
     public AudioSource audioSource;
+    public float cutoffFrequency = 100f;
+
+    // Low-pass filter parameters
+    private float filterConstant;
+    private float previousSample = 0f;
 
     void Start()
     {
@@ -18,6 +25,10 @@ public class SoundHapticFeedback : MonoBehaviour
 
         // Start playing the audio
         audioSource.Play();
+
+        float dt = 1f / AudioSettings.outputSampleRate;
+        float RC = 1f / (cutoffFrequency * 2 * Mathf.PI);
+        filterConstant = dt / (dt + RC);
     }
 
     void Update()
@@ -26,14 +37,32 @@ public class SoundHapticFeedback : MonoBehaviour
         DetectSoundEvent();
     }
 
+    float[] ApplyLowPassFilter(float[] samples)
+    {
+        float[] filteredSamples = new float[samples.Length];
+
+        for (int i = 0; i < samples.Length; i++)
+        {
+            // Apply simple low-pass filter
+            filteredSamples[i] = previousSample + filterConstant * (samples[i] - previousSample);
+            previousSample = filteredSamples[i];
+        }
+
+        return filteredSamples;
+    }
+
+
     void DetectSoundEvent()
     {
         // Get audio samples from the AudioSource
         float[] samples = new float[1024]; // Adjust the size based on your needs
         audioSource.GetOutputData(samples, 0);
 
-        // Calculate the RMS (Root Mean Square) amplitude
-        float rmsAmplitude = CalculateRMSAmplitude(samples);
+        // Apply the filter to the samples
+        float[] filteredSamples = ApplyLowPassFilter(samples);
+
+        // Calculate the RMS (Root Mean Square) amplitude of the filtered samples
+        float rmsAmplitude = CalculateRMSAmplitude(filteredSamples);
 
         // Adjust the detection threshold based on the volume level
         float adjustedThreshold = detectionThreshold * vibrationIntensityMultiplier;
@@ -68,7 +97,7 @@ public class SoundHapticFeedback : MonoBehaviour
         //     Device.TapticImpact((TapticFeedbackImpactStyle)feedbackIntensity);
         #if UNITY_ANDROID
             // Scale the intensity for Android vibration duration
-            long duration = Mathf.RoundToInt(intensity * 1000);
+            long duration = Mathf.RoundToInt(intensity * 0.0001f);
             Handheld.Vibrate();
         #endif
     }
