@@ -5,7 +5,6 @@ public class PausePlayController : MonoBehaviour
 {
     public AudioSource music;
     private bool isPaused = false;
-    private bool audioWasMuted;
 
     private SoundController soundController;
 
