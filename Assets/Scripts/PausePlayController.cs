@@ -30,12 +30,7 @@ public class PausePlayController : MonoBehaviour
     {
         if (isPaused)
         {
-            audioWasMuted = music.mute == true;
             music.UnPause();
-            if (audioWasMuted)
-            {
-                music.mute = true;
-            }
         }
         else
         {

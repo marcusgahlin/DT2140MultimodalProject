@@ -43,7 +43,7 @@ public class SoundController : MonoBehaviour
     public void Mute()
     {
         isMuted = !isMuted;
-        audioSource.mute = isMuted;
+        //audioSource.mute = isMuted;
     }
 
     void audioData()

@@ -122,7 +122,7 @@ Transform:
   m_GameObject: {fileID: 527938748236537646}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 630814170066138734}
@@ -1193,6 +1193,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 6187353447836275316}
+  instrumentMute: {fileID: 0}
+  instrument: 
 --- !u!114 &6787608064543565163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2135,6 +2137,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 1945821585532736467}
+  instrumentMute: {fileID: 0}
+  instrument: 
 --- !u!114 &6249942233882012218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2844,6 +2848,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 6219474820796889373}
+  instrumentMute: {fileID: 0}
+  instrument: 
 --- !u!114 &4731126361283673581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5503,6 +5509,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 3802897200590780898}
+  instrumentMute: {fileID: 0}
+  instrument: 
 --- !u!114 &1355051103928004123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6177,6 +6185,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 868371882389905027}
+  instrumentMute: {fileID: 0}
+  instrument: 
 --- !u!114 &4727286110392452673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7098,6 +7108,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 111215701887438408}
+  instrumentMute: {fileID: 0}
+  instrument: 
 --- !u!114 &8301395805312274697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7114,6 +7126,8 @@ MonoBehaviour:
   vibrationIntensityMultiplier: 2
   audioSource: {fileID: 111215701887438408}
   cutoffFrequency: 200
+  durationMultiplier: 0.0001
+  vibrationSamples: 20
 --- !u!114 &8937438483529830602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7473,6 +7487,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 8180241831913795408}
+  instrumentMute: {fileID: 0}
+  instrument: 
 --- !u!114 &8913428555629296322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7673,6 +7689,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 649533926929996312}
+  instrumentMute: {fileID: 0}
+  instrument: 
 --- !u!114 &122283177823050617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7887,6 +7905,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 5754009094340661679}
+  instrumentMute: {fileID: 0}
+  instrument: 
 --- !u!114 &2827921267180451669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8101,6 +8121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 8439746535414459181}
+  instrumentMute: {fileID: 0}
+  instrument: 
 --- !u!114 &932862650185395624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8126,10 +8148,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6911b1262a0b4c619192e4790dafe86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionThreshold: 0.01
+  detectionThreshold: 1
   vibrationIntensityMultiplier: 10
   audioSource: {fileID: 8439746535414459181}
-  cutoffFrequency: 200
+  cutoffFrequency: 50
+  durationMultiplier: 0.0001
+  vibrationSamples: 20
 --- !u!114 &8816211656977569827
 MonoBehaviour:
   m_ObjectHideFlags: 0
