@@ -1,8 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-
-public class InfoButtonMove : MonoBehaviour
+public class InfoButtonMute : MonoBehaviour
 {
     public GameObject button;
     public Button startButton;
@@ -14,8 +13,8 @@ public class InfoButtonMove : MonoBehaviour
 
     void StartTimer()
     {   button.SetActive(false);
-        Invoke("ShowButton", 10.0f);
-        Invoke("HideButton", 15.0f);
+        Invoke("ShowButton", 15.0f);
+        Invoke("HideButton", 25.0f);
     }
 
     void HideButton()
