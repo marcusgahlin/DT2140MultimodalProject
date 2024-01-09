@@ -38,7 +38,7 @@ public class SoundHapticFeedback : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
 
         // Start playing the audio
-        audioSource.Play();
+        //audioSource.Play();
         vibrationOn = false;
 
         // float dt = 1f / AudioSettings.outputSampleRate;

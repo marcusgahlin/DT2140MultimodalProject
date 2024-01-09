@@ -36,6 +36,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit.AR;
+using UnityEngine.XR.ARFoundation;
 
 public class InteractableToggle : MonoBehaviour
 {
@@ -46,6 +47,9 @@ public class InteractableToggle : MonoBehaviour
     
     [SerializeField]
     private GameObject instructions;
+
+    [SerializeField] 
+    private ARSessionOrigin arSessionOr;
 
     // Start is called before the first frame update
     void Start()
@@ -75,6 +79,11 @@ public class InteractableToggle : MonoBehaviour
         // instantiatedInstruments = GameObject.find('Instruments 1 macke');
         instructions.SetActive(false);
         InstrumentUI.SetActive(true);
+
+        arSessionOr.GetComponent<ARPlaneTracker>().enabled = false;
+        arSessionOr.GetComponent<ARPlaneManager>().enabled = false;
+
+
 
         // Or if you want to change the prefab for the next placement, you can do so here
         // placementInteractable.placementPrefab = [Your Next Prefab];

@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Buttons.unity
     guid: f76a780485e954bf399ad152fda1d7eb
+  - enabled: 1
+    path: Assets/Scenes/EmptyScene.unity
+    guid: 6b29427b6780849de9caa306d4426ac1
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: b03371d5eecb645a9bbce3714d13cf2e, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7cbbae22022be46c2b6a3852ea7a4294, type: 2}

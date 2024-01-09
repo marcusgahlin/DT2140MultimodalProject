@@ -5,6 +5,7 @@ public class PausePlayController : MonoBehaviour
 {
     public AudioSource music;
     private bool isPaused = false;
+    private bool hasStarted = false;
 
     private SoundController soundController;
 
@@ -27,18 +28,23 @@ public class PausePlayController : MonoBehaviour
 
     void Pause()
     {
-        if (isPaused)
-        {
-            music.UnPause();
+        if (!hasStarted){
+            music.Play();
+            hasStarted = true;
         }
         else
         {
-            music.Pause();
+            if (isPaused)
+            {
+                music.UnPause();
+            }
+            else
+            {
+                music.Pause();
+            }
+            soundController.Mute();
+            isPaused = !isPaused;
         }
-
-        soundController.Mute();
-
-        isPaused = !isPaused;
     }
 }
 
