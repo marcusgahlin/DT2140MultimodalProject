@@ -7,7 +7,8 @@ public class InfoButtonMute : MonoBehaviour
     public Button startButton;
 
     void Start()
-    {
+    {   
+        button.SetActive(false);
         startButton.onClick.AddListener(StartTimer);
     }
 

@@ -8,8 +8,10 @@ public class InfoButtonMove : MonoBehaviour
     public Button startButton;
 
     void Start()
-    {
+    {   
+        button.SetActive(false);
         startButton.onClick.AddListener(StartTimer);
+        
     }
 
     void StartTimer()

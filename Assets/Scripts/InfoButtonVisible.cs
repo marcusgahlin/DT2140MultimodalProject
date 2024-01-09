@@ -10,7 +10,7 @@ public class InfoButtonVisible : MonoBehaviour
 
     void Start()
     {
-       
+        button.SetActive(false);
         startButton.onClick.AddListener(StartTimer);
     }
 
